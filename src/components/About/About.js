@@ -1,6 +1,9 @@
 import React from 'react'
 import classes from './About.module.css'
 import DownloadIcon from '@mui/icons-material/Download'
+// import { CircularProgress } from '@mui/material'
+import CircularProgress from '@mui/material/CircularProgress';
+import { Box } from '@mui/system';
 const About = ()=>{
     return(<div>
         <div className={classes['Title-sec']}>
@@ -120,18 +123,184 @@ const About = ()=>{
     <h3 className={classes['skill-title']}>My skills</h3>
 </div>
 <div className={classes['col-5']}>
-{/* <span className={classes['title-timer']} data-from="0" data-to="85" data-speed="1800">85</span>
-            <div className={classes["overlay"]}></div>
-            <div className={classes["left"]}></div>
-            <div className={classes["right"]}></div> */}
-    <div className='c100'>
-        <span>25%</span>
-        <div className={classes['slice']}>
-            <div className={classes['bar25']}></div>
-            <div className={classes['fill']}></div>
-        </div>
-    </div>
-</div>
+     
+        
+     <Box sx={{ position: 'relative', display: 'inline-flex' }}>
+        <CircularProgress variant='determinate' value={80} size={130} sx={{color:'#0004ff', backgroundColor: '#252525', borderRadius:'50%'}}/>
+        <Box
+        sx={{
+          top: 0,
+          left: 0,
+          bottom: 0,
+          right: 0,
+          position: 'absolute',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+      >
+        <span className={classes['percentage']}> 80%</span>
+      </Box>
+    </Box>
+    <h6 className={classes['skill-name']}>html</h6>
+    </div> 
+<div className={classes['col-5']}>
+     
+        
+     <Box sx={{ position: 'relative', display: 'inline-flex' }}>
+        <CircularProgress variant='determinate' value={50} size={130} sx={{color:'#0004ff', backgroundColor: '#252525', borderRadius:'50%'}}/>
+        <Box
+        sx={{
+          top: 0,
+          left: 0,
+          bottom: 0,
+          right: 0,
+          position: 'absolute',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+      >
+        <span className={classes['percentage']}> 50%</span>
+      </Box>
+    </Box>
+    <h6 className={classes['skill-name']}>javascript</h6>
+    </div> 
+<div className={classes['col-5']}>
+     
+        
+     <Box sx={{ position: 'relative', display: 'inline-flex' }}>
+        <CircularProgress variant='determinate' value={55} size={130} sx={{color:'#0004ff', backgroundColor: '#252525', borderRadius:'50%'}}/>
+        <Box
+        sx={{
+          top: 0,
+          left: 0,
+          bottom: 0,
+          right: 0,
+          position: 'absolute',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+      >
+        <span className={classes['percentage']}> 55%</span>
+      </Box>
+    </Box>
+    <h6 className={classes['skill-name']}>react</h6>
+    </div> 
+<div className={classes['col-5']}>
+     
+        
+     <Box sx={{ position: 'relative', display: 'inline-flex' }}>
+        <CircularProgress className={classes['MuiCircularProgress-indeterminate']} variant='determinate' value={61} size={130} sx={{color:'#0004ff', backgroundColor: '#252525', borderRadius:'50%'}}/>
+        <Box
+        sx={{
+          top: 0,
+          left: 0,
+          bottom: 0,
+          right: 0,
+          position: 'absolute',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+      >
+        <span className={classes['percentage']}> 61%</span>
+      </Box>
+    </Box>
+    <h6 className={classes['skill-name']}>github</h6>
+    </div> 
+<div className={classes['col-5']}>
+     
+        
+     <Box sx={{ position: 'relative', display: 'inline-flex' }}>
+        <CircularProgress variant='determinate' value={75} size={130} sx={{color:'#0004ff', backgroundColor: '#252525', borderRadius:'50%'}}/>
+        <Box
+        sx={{
+          top: 0,
+          left: 0,
+          bottom: 0,
+          right: 0,
+          position: 'absolute',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+      >
+        <span className={classes['percentage']}> 75%</span>
+      </Box>
+    </Box>
+    <h6 className={classes['skill-name']}>css</h6>
+    </div> 
+<div className={classes['col-5']}>
+     
+        
+     <Box sx={{ position: 'relative', display: 'inline-flex' }}>
+        <CircularProgress variant='determinate' value={25} size={130} sx={{color:'#0004ff', backgroundColor: '#252525', borderRadius:'50%'}}/>
+        <Box
+        sx={{
+          top: 0,
+          left: 0,
+          bottom: 0,
+          right: 0,
+          position: 'absolute',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+      >
+        <span className={classes['percentage']}> 25%</span>
+      </Box>
+    </Box>
+    <h6 className={classes['skill-name']}>UI/UX</h6>
+    </div> 
+<div className={classes['col-5']}>
+     
+        
+     <Box sx={{ position: 'relative', display: 'inline-flex' }}>
+        <CircularProgress variant='determinate' value={15} size={130} sx={{color:'#0004ff', backgroundColor: '#252525', borderRadius:'50%'}}/>
+        <Box
+        sx={{
+          top: 0,
+          left: 0,
+          bottom: 0,
+          right: 0,
+          position: 'absolute',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+      >
+        <span className={classes['percentage']}> 15%</span>
+      </Box>
+    </Box>
+    <h6 className={classes['skill-name']}>next.js</h6>
+    </div> 
+<div className={classes['col-5']}>
+     
+        
+     <Box sx={{ position: 'relative', display: 'inline-flex' }}>
+        <CircularProgress variant='determinate' value={35} size={130} sx={{color:'#0004ff', backgroundColor: '#252525', borderRadius:'50%'}}/>
+        <Box
+        sx={{
+          top: 0,
+          left: 0,
+          bottom: 0,
+          right: 0,
+          position: 'absolute',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+      >
+        <span className={classes['percentage']}> 35%</span>
+      </Box>
+    </Box>
+    <h6 className={classes['skill-name']}>c++</h6>
+    </div> 
+   
+    
+
                 </div>
             </div>
         </section>

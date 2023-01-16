@@ -428,7 +428,7 @@ hr {
 .col-5{
     flex: 0 0 auto;
     width: 50%;
-
+ text-align: center;
         /* width: 200px;
         height: 200px;
         font-size: 30px;
@@ -446,7 +446,7 @@ hr {
 
 @media (min-width: 576px){
     .col-5{
-        margin-bottom: 3rem!important;
+        margin-bottom: 4rem!important;
     }
 }
 @media (min-width: 768px){
@@ -460,7 +460,10 @@ hr {
     margin: 0 auto;
     background-color: #252525;
     position: relative;
-    font-size: 120px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    
     width: 1em;
     height: 1em;
     border-radius: 50%;
@@ -471,98 +474,49 @@ hr {
         transform: scale(.8);
     }
 }
-.slice {
-    position: absolute;
-    width: 1em;
-    height: 1em;
-    clip: rect(auto,auto,auto,auto);
-    clip: rect(0,1em,1em,0.5em);
-    box-sizing: content-box;
-}
-.bar25{
-    transform: rotate(90deg);
-    border: 0.08em solid #0004ff;
-    position: absolute;
-    /* border: 0.08em solid #307bbb; */
-    width: 0.84em;
-    height: 0.84em;
-    clip: rect(0,0.5em,1em,0);
-    border-radius: 50%;
-    /* transform: rotate(0deg); */
-    box-sizing: content-box;
 
+.skill-name{
+    font-family: Open Sans,sans-serif;
+    text-transform: uppercase!important;
+    text-align: center!important;
+    margin-top: 0.5rem!important;
+    font-size: 1.6rem;
+    font-weight: 600;
 }
-/* .title-timer
- {position: relative;
-    z-index: 100;}
 
-    .overlay {
-        width: 50%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 1;
-        background-color: #07070c
+@media (min-width: 576px){
+    .skill-name{
+        margin-top: 1.5rem!important;
     }
-    .left,
-    .right {
-        width: 50%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        border: 10px solid #222235;
-        border-radius: 100px 0px 0px 100px;
-        border-right: 0;
-        transform-origin: right;
-    }
-    .left {animation: load1 1s linear forwards;}
-    .col-5:nth-of-type(2) .right, .col-5:nth-of-type(3) .right {animation: load2 .5s linear forwards 1s;}
-
-.col-5:last-of-type .right, .col-5:first-of-type .right {animation: load3 .8s linear forwards 1s;}
-
-@keyframes load1 {
-    0% {transform: rotate(0deg);}
-
-    100% {transform: rotate(180deg);}
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
 }
 
-@keyframes load2 {
-    0% {z-index: 100;transform: rotate(180deg);}
-
-    100% {z-index: 100;transform: rotate(270deg);}
-}
-
-@keyframes load3 {
-    0% {z-index: 100;transform: rotate(180deg);}
-
-    100% {
-        z-index: 100;transform: rotate(315deg);}
-} */
-.c100:after {
-    top: 0.08em;
-    left: 0.08em;
-    content: " ";
-    border-radius: 50%;
-    background-color: #f5f5f5;
-    width: 0.84em;
-    height: 0.84em;
-    transition-property: all;
-    transition-duration: .2s;
-    transition-timing-function: ease-in;
-    position: absolute;
-    display: block;
+.percentage{
+    font-size: 1.8rem;
+    height: 82%;
+    width: 82%;
     background-color: #111;
-}
-.fill{
-    border: 0.08em solid #0004ff;
-    transform: rotate(180deg);
-    position: absolute;
-    /* border: 0.08em solid #307bbb; */
-    width: 0.84em;
-    height: 0.84em;
-    clip: rect(0,0.5em,1em,0);
     border-radius: 50%;
-    box-sizing: content-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+/* .MuiCircularProgress-indeterminate {
+    animation: circular-rotate 1s linear;
+  }
+  
+  @keyframes circular-rotate {
+    0% {
+      transform: rotate(0deg);
+      /* Fix IE11 wobbly */
+      /* transform-origin: 50% 50%; */
+    /* 100% {
+      transform: rotate(360deg);
+    }
+  } */ 
