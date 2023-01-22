@@ -66,7 +66,7 @@ body {
     height: 50px;
     margin: 0;
     font-size: 1.5rem;
-    background-color: #0004ff;
+    background-color: var(--primary-color-blue);
 }
 
 .icons-list{
@@ -94,7 +94,7 @@ body {
 }
 
 .icons-list:hover{
-    background-color: #0004ff;
+    background-color: var(--primary-color-blue);
 }
 .header{
     position: fixed;
@@ -160,7 +160,7 @@ body {
 }
 
 .blue-shape{
-    background-color: #0004ff;
+    background-color: var(--primary-color-blue);
     position: fixed;
     height: 200%;
     width: 100%;
@@ -266,7 +266,7 @@ margin-left: calc(var(--bs-gutter-x)*-.5);
     margin: 18px 0 10px;
     position: relative;
     /* padding-left: 7rem; */
-    color: #0004ff;
+    color: var(--primary-color-blue);
     font-family: 'Poppins' ,sans-serif;
     text-transform: uppercase;
 }

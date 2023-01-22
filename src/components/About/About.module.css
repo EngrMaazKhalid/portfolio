@@ -1,3 +1,7 @@
+:root{
+    --primary-color-blue:#0509fd;
+}
+
 .Title-sec{
     margin: 0 auto;
     width: 100%;
@@ -28,7 +32,7 @@
 .Title-sec-h1 {
     font-size: 5.6rem;
     font-weight: 900!important;
-    color: #0004ff;
+    color: var(--primary-color-blue);
     text-transform: uppercase;
     margin: 0;
 }
@@ -120,6 +124,11 @@
     .col-div{
         flex: 0 0 auto;
     width: 41.66666667% ;
+    }
+}
+@media (max-width: 992px){
+    .col-div{
+        margin-bottom: 4rem;
     }
 }
 @media (min-width: 1200px){
@@ -258,7 +267,7 @@ ul {
     background-color: transparent;
     outline: none!important;
     cursor: pointer!important;
-    border: 1px solid #0004ff;
+    border: 1px solid var(--primary-color-blue);
 }
 
 .button-text{
@@ -282,7 +291,7 @@ ul {
     color: #fff;
     border-radius: 50%;
     font-size: 15px;
-    background-color: #0004ff;
+    background-color: var(--primary-color-blue);
 }
 .button:hover:before {
     transform: translateX(0);
@@ -297,7 +306,7 @@ ul {
     right: 0;
     transform: translateX(100%);
     transition: all .3s ease-out;
-    background-color: #0004ff;
+    background-color: var(--primary-color-blue);
 }
 
 
@@ -357,7 +366,7 @@ ul {
     font-weight: 700;
     font-family: Poppins,sans-serif;
     position: relative!important;
-    color: #0004ff;
+    color: var(--primary-color-blue);
 }
 .number:after {
     content: "+";
@@ -405,6 +414,7 @@ hr {
     .col-12 {
         flex: 0 0 auto;
         width: 100%;
+        margin-bottom: 2.5rem;
     }
 
 .skill-title{
@@ -449,6 +459,11 @@ hr {
         margin-bottom: 4rem!important;
     }
 }
+@media (max-width: 576px){
+    .col-5{
+        margin-bottom: 4rem!important;
+    }
+}
 @media (min-width: 768px){
     .col-5{
         flex: 0 0 auto;
@@ -489,6 +504,11 @@ hr {
         margin-top: 1.5rem!important;
     }
 }
+@media (max-width: 576px){
+    .skill-name{
+        margin-top: 1.5rem!important;
+    }
+}
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
     margin-bottom: 0.5rem;
@@ -507,16 +527,98 @@ hr {
     align-items: center;
 }
 
-/* .MuiCircularProgress-indeterminate {
-    animation: circular-rotate 1s linear;
-  }
-  
-  @keyframes circular-rotate {
-    0% {
-      transform: rotate(0deg);
-      /* Fix IE11 wobbly */
-      /* transform-origin: 50% 50%; */
-    /* 100% {
-      transform: rotate(360deg);
+.col-lg{
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+@media (min-width: 992px){
+.col-lg{
+    flex: 0 0 auto;
+    width: 50%;
+}
+}
+.resume-ul{
+margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.resume-li{
+    position: relative;
+    padding: 0 20px 0 60px;
+    margin: 0 0 50px;
+}
+.icon-business{
+    background-color: var(--primary-color-blue);
+    width: 50px;
+    height: 50px;
+   display: flex;
+   align-items:center ;
+   justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    line-height: 40px;
+    text-align: center;
+    z-index: 1;
+    border-radius: 50%;
+    color: #fff
+}
+.time-period{
+    color: #fff;
+    font-size: 12px;
+    padding: 1px 10px;
+    display: inline-block;
+    margin-bottom: 12px;
+    border-radius: 20px;
+    font-weight: 600;
+    background-color: #252525;
+    opacity: .8;
+    text-transform: uppercase!important;
+}
+.degree-name{
+    font-size: 18px;
+    margin: 7px 0 10px;
+    font-family: Poppins,sans-serif;
+    text-transform: uppercase!important;
+}
+@media (max-width: 576px){
+    .degree-name{
+        font-size: 17px;
     }
-  } */ 
+}
+.place{
+    opacity: .8;
+    font-weight: 600;
+    font-size: 15px;
+    position: relative;
+    font-family: Open Sans,sans-serif;
+    padding-left: 26px;
+}
+
+ .place:before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 2px;
+    background-color: #fff;
+    left: 7px;
+    top: 7px;
+    opacity: .8;
+}
+
+.degree-para{
+    margin: 0;
+    color: #eee;
+    font-size: 14px;
+    font-family: Open Sans,sans-serif;
+}
+.resume-li:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 25px;
+    bottom: 0;
+    border-left: 1px solid #333;
+}

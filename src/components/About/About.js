@@ -1,9 +1,13 @@
 import React from 'react'
 import classes from './About.module.css'
 import DownloadIcon from '@mui/icons-material/Download'
+import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
+import SchoolIcon from '@mui/icons-material/School';
+
 // import { CircularProgress } from '@mui/material'
 import CircularProgress from '@mui/material/CircularProgress';
 import { Box } from '@mui/system';
+import School from '@mui/icons-material/School';
 const About = ()=>{
     return(<div>
         <div className={classes['Title-sec']}>
@@ -236,6 +240,28 @@ const About = ()=>{
      
         
      <Box sx={{ position: 'relative', display: 'inline-flex' }}>
+        <CircularProgress variant='determinate' value={43} size={130} sx={{color:'#0004ff', backgroundColor: '#252525', borderRadius:'50%'}}/>
+        <Box
+        sx={{
+          top: 0,
+          left: 0,
+          bottom: 0,
+          right: 0,
+          position: 'absolute',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+      >
+        <span className={classes['percentage']}> 43%</span>
+      </Box>
+    </Box>
+    <h6 className={classes['skill-name']}>UI/UX</h6>
+    </div> 
+<div className={classes['col-5']}>
+     
+        
+     <Box sx={{ position: 'relative', display: 'inline-flex' }}>
         <CircularProgress variant='determinate' value={25} size={130} sx={{color:'#0004ff', backgroundColor: '#252525', borderRadius:'50%'}}/>
         <Box
         sx={{
@@ -252,29 +278,7 @@ const About = ()=>{
         <span className={classes['percentage']}> 25%</span>
       </Box>
     </Box>
-    <h6 className={classes['skill-name']}>UI/UX</h6>
-    </div> 
-<div className={classes['col-5']}>
-     
-        
-     <Box sx={{ position: 'relative', display: 'inline-flex' }}>
-        <CircularProgress variant='determinate' value={15} size={130} sx={{color:'#0004ff', backgroundColor: '#252525', borderRadius:'50%'}}/>
-        <Box
-        sx={{
-          top: 0,
-          left: 0,
-          bottom: 0,
-          right: 0,
-          position: 'absolute',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-        }}
-      >
-        <span className={classes['percentage']}> 15%</span>
-      </Box>
-    </Box>
-    <h6 className={classes['skill-name']}>next.js</h6>
+    <h6 className={classes['skill-name']}>Typescript</h6>
     </div> 
 <div className={classes['col-5']}>
      
@@ -302,6 +306,70 @@ const About = ()=>{
     
 
                 </div>
+                <hr className={classes['seperator']}></hr>
+                <div className={classes['row']}>
+<div className={classes['col-12']}>
+    <h3 className={classes['skill-title']}>Experience and Education</h3>
+    </div>
+    <div className={classes['col-lg']}>
+      <div className={classes['resume-box']}>
+          <ul className={classes['resume-ul']}>
+            <li className={classes['resume-li']}>
+              <div className={classes['icon-business']}>
+            <BusinessCenterIcon sx={{fontSize:'35px'}}/>
+            </div>
+            <span className={classes['time-period']}>2021-Present</span>
+            <h5 className={classes['degree-name']}>Web developer
+            <span className={classes['place']}>Fiverr</span>
+            </h5>
+            <p className={classes['degree-para']}>  Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore
+        adipisicing elit</p>
+            </li>
+            <li className={classes['resume-li']}>
+              <div className={classes['icon-business']}>
+            <SchoolIcon sx={{fontSize:'35px'}}/>
+            </div>
+            <span className={classes['time-period']}>2020-Present</span>
+            <h5 className={classes['degree-name']}>Software Engineering
+            <span className={classes['place']}>UEt taxila</span>
+            </h5>
+            <p className={classes['degree-para']}>  Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore
+        adipisicing elit</p>
+            </li>
+          </ul>
+      </div>
+    </div>
+    <div className={classes['col-lg']}>
+      <div className={classes['resume-box']}>
+          <ul className={classes['resume-ul']}>
+            <li className={classes['resume-li']}>
+              <div className={classes['icon-business']}>
+            <SchoolIcon sx={{fontSize:'35px'}}/>
+            </div>
+            <span className={classes['time-period']}>2018-2020</span>
+            <h5 className={classes['degree-name']}>Pre-Engineering
+            <span className={classes['place']}>Pgc</span>
+            </h5>
+            <p className={classes['degree-para']}>  Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore
+        adipisicing elit</p>
+            </li>
+            <li className={classes['resume-li']}>
+              <div className={classes['icon-business']}>
+            <SchoolIcon sx={{fontSize:'35px'}}/>
+            </div>
+            <span className={classes['time-period']}>2017-2018</span>
+            <h5 className={classes['degree-name']}>matriculation
+            <span className={classes['place']}>Dar-e-Arqam high School</span>
+            </h5>
+            <p className={classes['degree-para']}>  Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore
+        adipisicing elit</p>
+            </li>
+          </ul>
+      </div>
+    </div>
+
+
+</div>
             </div>
         </section>
 
