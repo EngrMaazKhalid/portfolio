@@ -1,10 +1,10 @@
 import React from 'react'
 import classes from './home.module.css'
-
+import {motion} from 'framer-motion'
 const Home = ()=>{
 
     return(
-    <div id='home'>
+    <motion.div id='home' initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0, transition:{ duration: 0.2}}}>
        
         <div className={classes['tab-content']}>
         <div className={classes['tab-pane']}>
@@ -14,6 +14,7 @@ const Home = ()=>{
         <div className={classes['dp-img']} /> 
         <div className={classes['descp-div']}> 
         <div className={classes['descp-part']}>
+            <div className={classes['small-dp']} />
             <h1 className={classes['main-heading']}>
             &#8722;  I'm maaz khalid <br /><span>React developer</span>
             </h1>
@@ -24,7 +25,7 @@ const Home = ()=>{
         </div>
         </div>
         </div>
-    </div>)
+    </motion.div>)
 }
 
 export default Home

@@ -6,9 +6,33 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import SendIcon from '@mui/icons-material/Send';
+import FormSchema from './Schemas/FormSchema';
+import { useFormik } from 'formik'
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import {motion} from 'framer-motion'
+const initialValues =
+{
+    name: "",
+    email: "",
+    subject: "",
+    message: ""
+};
+
 const Contact = ()=>{
-    return(<div>
+    const { values, errors, touched, handleBlur, handleChange, handleSubmit } = useFormik({
+        initialValues: initialValues,
+        validationSchema: FormSchema,
+        onSubmit: (values, action) => {
+            console.log(values)
+            action.resetForm();
+        }
+    })
+    console.log(errors)
+
+
+
+    return(<motion.div id='contact' initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0, transition:{ duration: 0.2}}}>
         <div className={classes['Title-sec']}>
     <h1 className={classes['Title-sec-h1']}> Get in Touch</h1>
     <span className={classes['Title-bg']}>Contact</span>
@@ -24,7 +48,7 @@ const Contact = ()=>{
             </p>
             <div className={classes['information']}>
         
-        <LocationOnIcon className={classes['icon']} />
+        <LocationOnIcon sx={{fontSize:'3.5rem'}} className={classes['icon']} />
         
         <p className={classes['info-para']}>
         <span className={classes['info-head']}>city</span>
@@ -33,7 +57,7 @@ const Contact = ()=>{
             </div>
             <div className={classes['information']}>
         
-        <MailIcon className={classes['icon']} />
+        <MailIcon sx={{fontSize:'3.5rem'}} className={classes['icon']} />
         
         <p className={classes['info-para']}>
         <span className={classes['info-head']}>Email</span>
@@ -42,7 +66,7 @@ const Contact = ()=>{
             </div>
             <div className={classes['information']}>
         
-        <PhoneIcon className={classes['icon']} />
+        <PhoneIcon sx={{fontSize:'3.5rem'}} className={classes['icon']} />
         
         <p className={classes['info-para']}>
         <span className={classes['info-head']}>call me</span>
@@ -57,19 +81,47 @@ const Contact = ()=>{
             </ul>
         </div>
         <div className={classes['form-sec']}>
-            <form className={classes['contactform']}>
+            <form className={classes['contactform']} onSubmit={handleSubmit}>
                 <div className={classes['row']}>
                     <div className={classes['col-11']}>
                         <div className={classes['formgroup']}>
-                            
+                            <input type='text' name='name' id='name' placeholder='YOUR NAME' value={values.name} onChange={handleChange} onBlur={handleBlur} />
+                            {errors.name && touched.name ? (<p className={classes['form-error']}>{errors.name}</p>) : null}
                         </div>
                     </div>
+                    <div className={classes['col-11']}>
+                        <div className={classes['formgroup']}>
+                            <input type='email' name='email' id='email' placeholder='YOUR EMAIL' value={values.email} onChange={handleChange} onBlur={handleBlur} />
+                            {errors.email && touched.email ? (<p className={classes['form-error']}>{errors.email}</p>) : null}
+                        </div>
+                    </div>
+                    <div className={classes['col-112']}>
+                        <div className={classes['formgroup']}>
+                            <input type='text' name='subject' id='subject' placeholder='YOUR SUBJECT' value={values.subject} onChange={handleChange} onBlur={handleBlur} />
+                            {errors.subject && touched.subject ? (<p className={classes['form-error']}>{errors.subject}</p>) : null}
+                        </div>
+                    </div>
+                    <div className={classes['col-112']}>
+                        <div className={classes['formgroup']}>
+                            <textarea name='message' placeholder='YOUR MESSAGE' id='message' value={values.message} onChange={handleChange} onBlur={handleBlur} />
+                            {errors.message && touched.message ? (<p className={classes['form-error']}>{errors.message}</p>) : null}
+                        </div>
+                    </div>
+                    <div className={classes['col-112']}>
+                    <button type='submit' value="Send Message"  className={classes['button']}>
+                        <span className={classes['button-text']}> SEND</span>
+                            <span className={classes['button-icon']}>
+                             <SendIcon sx={{ fontSize:'3rem'}} />
+                             </span>
+                             </button>
+                    </div>
+
                 </div>
             </form>
         </div>
     </div>
     </div>
-    </div>)
+    </motion.div>)
 }
 
 export default Contact;

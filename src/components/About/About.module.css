@@ -176,12 +176,16 @@
 }
 @media (max-width: 991px){
     .img-fluid{
+        background-image: url('./maaz.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
         border-radius: 50%;
-    width: 270px;
-    height: 270px;
-    border: 4px solid #252525;
-    margin: 0 auto 25px;
-    display: block;
+        width: 270px;
+        height: 270px;
+        border: 4px solid #252525;
+        margin: 0 auto 25px;
+        display: block;
     }
 }
 @media (max-width: 576px){

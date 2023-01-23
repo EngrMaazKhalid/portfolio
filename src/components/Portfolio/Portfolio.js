@@ -1,8 +1,9 @@
 import { requirePropFactory } from '@mui/material';
 import React from 'react'
 import classes from './portfolio.module.css'
+import {motion} from 'framer-motion'
 const Portfolio = ()=>{
-    return(<div id='portfolio'>
+    return(<motion.div id='portfolio' initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0, transition:{ duration: 0.2}}}>
           <div className={classes['Title-sec']}>
             <h1 className={classes['Title-sec-h1']}> My Portfolio</h1>
             <span className={classes['Title-bg']}>Projects</span>
@@ -65,7 +66,7 @@ const Portfolio = ()=>{
                 </div>
             </div>
             </section>
-        </div>
+        </motion.div>
    )
 }
 
