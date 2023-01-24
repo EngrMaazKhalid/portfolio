@@ -177,3 +177,11 @@
     background-color: var(--primary-color-blue);
     opacity: 1;
 }
+.port-img1{
+    display: block;
+    max-width: 100%;    
+    vertical-align: middle;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}

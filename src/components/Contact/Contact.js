@@ -77,7 +77,7 @@ const Contact = ()=>{
                 <li className={classes['social-li']}><FacebookRoundedIcon className={classes['social-icon']} sx={{fontSize:'4rem', transition:'all.2s'}}/></li>
                 <li className={classes['social-li']}><TwitterIcon className={classes['social-icon']} sx={{fontSize:'4rem', transition:'all.2s'}}/></li>
                 <li className={classes['social-li']}><InstagramIcon className={classes['social-iconIns']} sx={{fontSize:'4rem', transition:'all.2s'}}/></li>
-                <li className={classes['social-li']}><LinkedInIcon className={classes['social-icon']} sx={{fontSize:'4rem', transition:'all.2s'}}/></li>
+                <li className={classes['social-li']}><a href='https://www.linkedin.com/in/muhammad-maaz-khalid-131a40247/'> <LinkedInIcon className={classes['social-icon']} sx={{fontSize:'4rem', transition:'all.2s'}}/></a></li>
             </ul>
         </div>
         <div className={classes['form-sec']}>

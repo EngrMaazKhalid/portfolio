@@ -71,8 +71,8 @@ const About = () => {
                     <li className={classes['list']}> <span className={classes['title']}>Address: </span>
                       <span className={classes['answer']}>Islamabad</span>
                     </li>
-                    <li className={classes['list']}> <span className={classes['title']}>FreeLance: </span>
-                      <span className={classes['answer']}>Available</span>
+                    <li className={classes['list']}> <span className={classes['title']}>Fiverr: </span>
+                      <span className={classes['answer']}><a href='https://www.fiverr.com/engrmaazkhalid'>engrmaazkhalid</a></span>
                     </li>
                     <li className={classes['list']}> <span className={classes['title']}>Phone: </span>
                       <span className={classes['answer']}>+923315803936</span>
@@ -81,7 +81,7 @@ const About = () => {
                       <span className={classes['answer']}>engrmaazkhalid@gmail.com</span>
                     </li>
                     <li className={classes['list']}> <span className={classes['title']}>LinkedIn: </span>
-                      <span className={classes['answer']}>Muhammad Maaz Khalid</span>
+                      <span className={classes['answer']}><a href='https://www.linkedin.com/in/muhammad-maaz-khalid-131a40247/'> Muhammad Maaz Khalid</a></span>
                     </li>
                     <li className={classes['list']}> <span className={classes['title']}>Language: </span>
                       <span className={classes['answer']}>Urdu, English</span> 
