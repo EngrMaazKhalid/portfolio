@@ -213,15 +213,17 @@
     width: 66.66666667%;
     }
 }
+@media (max-width: 992px){
 .contactform{
-    padding-left: 30px;
+    padding-left: 2.5rem !important;
+}
 }
 
 .col-11{
     flex: 0 0 auto;
     width: 100%;
     box-sizing: border-box;
-    padding-left: 15px;
+    /* padding-left: 15px; */
     padding-right: 15px;
 }
 @media (min-width: 768px){

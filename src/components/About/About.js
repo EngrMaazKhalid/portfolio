@@ -56,7 +56,7 @@ const About = () => {
                 
                   <ul className={classes['about-list']}>
                   
-                    <li className={classes['list']} > <p className={classes['title']}>First Name: </p>
+                    <li className={classes['list']} > <span className={classes['title']}>First Name: </span>
                       <span className={classes['answer']}>Muhammad Maaz</span>
                     </li>
                     <li className={classes['list']}> <span className={classes['title']}>Last Name: </span>

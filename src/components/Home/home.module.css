@@ -128,8 +128,12 @@ body {
 
 .icons-list:hover{
     background-color: var(--primary-color-blue);
-    @media screen and (max-width: 991px)
+   
 }
+@media screen and (max-width: 991px){
+    
+    }
+
 .header{
     position: fixed;
     right: 3rem;
@@ -354,6 +358,7 @@ margin-left: calc(var(--bs-gutter-x)*-.5);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: top;
+
     width: 270px;
     height: 270px;
     border: 4px solid #252525;

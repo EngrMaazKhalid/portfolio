@@ -15,7 +15,7 @@ function App() {
    <BrowserRouter>
        <header className={classes['header']}>
             <ul className={classes['nav-bar']}>
-<li className={classes['icons-list']} > <Link to='/'> <HomeRoundedIcon className={classes['btn']} sx={{fontSize:'3rem' , transform:'translateY(3px)'}} />  <h2 className={classes['btn-heading']}>Home</h2></Link></li>
+<li className={classes['icons-list']}> <Link to='/'> <HomeRoundedIcon className={classes['btn']} sx={{fontSize:'3rem' , transform:'translateY(3px)'}} />  <h2 className={classes['btn-heading']}>Home</h2></Link></li>
 <li className={classes['icons-list']}><Link to='/about'><PersonIcon className={classes['btn']} sx={{fontSize:'3rem'  , transform:'translateY(3px)'}}/> <h2 className={classes['btn-heading']}>About</h2></Link></li>
 <li className={classes['icons-list']}><Link to='/portfolio'> <BusinessCenterIcon className={classes['btn']} sx={{fontSize:'3rem' , transform:'translateY(3px)'}}/> <h2 className={classes['btn-heading']}>Portfolio</h2></Link></li>
 <li className={classes['icons-list']}><Link to='/contact'> <LocalPostOfficeIcon className={classes['btn']} sx={{fontSize:'3rem' , transform:'translateY(3px)'}}/> <h2 className={classes['btn-heading']}>Contact</h2></Link></li>
