@@ -81,6 +81,10 @@
     margin-right: auto;
     margin-left: auto;
     padding-bottom: 7rem;
+    margin-bottom: 5rem;
+}
+.contact{
+    overflow: hidden;
 }
 .row,.row1{
     --bs-gutter-x: 1.5rem;

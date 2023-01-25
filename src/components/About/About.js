@@ -33,7 +33,7 @@ const About = () => {
 
 
 
-  return (<motion.div id='about' initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0, transition: { duration: 0.2 } }}>
+  return (<motion.div id='about'className={classes['about']} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0, transition: { duration: 0.2 } }}>
     <div className={classes['Title-sec']}>
       <h1 className={classes['Title-sec-h1']}> About ME</h1>
       <span className={classes['Title-bg']}>Resume</span>

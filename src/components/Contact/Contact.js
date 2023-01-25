@@ -32,7 +32,7 @@ const Contact = ()=>{
 
 
 
-    return(<motion.div id='contact' initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0, transition:{ duration: 0.2}}}>
+    return(<motion.div id='contact' className={classes['contact']} initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0, transition:{ duration: 0.2}}}>
         <div className={classes['Title-sec']}>
     <h1 className={classes['Title-sec-h1']}> Get in Touch</h1>
     <span className={classes['Title-bg']}>Contact</span>

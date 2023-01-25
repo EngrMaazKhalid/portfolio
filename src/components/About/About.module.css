@@ -58,6 +58,7 @@
 
 .main-section{
     padding-bottom: 20px;
+    margin-bottom: 5rem;
 }
 
 
@@ -194,6 +195,9 @@
         width: 230px;
         height: 230px;
     }
+}
+.about{
+    overflow: hidden;
 }
 .about-list{
     display: flex;
