@@ -136,6 +136,7 @@ body {
 
 .header{
     position: fixed;
+    
     right: 3rem;
     z-index: 3;
     display: flex;
@@ -149,6 +150,7 @@ body {
 }
 @media (max-width: 991px){
     .header{
+        position: fixed;
         left: 0;
     right: auto;
     bottom: 0;

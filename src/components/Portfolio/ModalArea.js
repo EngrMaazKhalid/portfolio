@@ -10,7 +10,7 @@ const ModalArea = (props) =>{
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    width: '60.5rem',
+    width: '75%',
     height:'auto',
     bgcolor: '#111',
     border: '2px solid #fff',
@@ -27,7 +27,7 @@ const ModalArea = (props) =>{
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={style}>
+        <Box sx={style} className={classes['box']}>
           <Typography id="modal-modal-title" variant="h6" component="h2" sx={{textTransform:'uppercase', fontSize:'2rem', fontWeight:'600', display:'flex', justifyContent:'center'}}>
             {props.name}
           </Typography>

@@ -109,6 +109,7 @@ const Contact = ()=>{
                     </div>
                     <div className={classes['col-112']}>
                     <button type='submit' value="Send Message"  className={classes['button']}>
+                        {console.log(handleSubmit)}
                         <span className={classes['button-text']}> SEND</span>
                             <span className={classes['button-icon']}>
                              <SendIcon sx={{ fontSize:'3rem'}} />

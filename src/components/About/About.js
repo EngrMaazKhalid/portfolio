@@ -349,8 +349,8 @@ const About = () => {
                   <h5 className={classes['degree-name']}>Web developer
                     <span className={classes['place']}>Fiverr</span>
                   </h5>
-                  <p className={classes['degree-para']}>  Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore
-                    adipisicing elit</p>
+                  <p className={classes['degree-para']}>  Providing front-end web development services on fiverr since last 2 years.
+    </p>
                 </li>
                 <li className={classes['resume-li']}>
                   <div className={classes['icon-business']}>
@@ -360,8 +360,7 @@ const About = () => {
                   <h5 className={classes['degree-name']}>Software Engineering
                     <span className={classes['place']}>UEt taxila</span>
                   </h5>
-                  <p className={classes['degree-para']}>  Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore
-                    adipisicing elit</p>
+                  <p className={classes['degree-para']}>  Student of Software Engineering in University of Engineering and Technology Taxila, Pakistan </p>
                 </li>
               </ul>
             </div>
@@ -377,8 +376,7 @@ const About = () => {
                   <h5 className={classes['degree-name']}>Pre-Engineering
                     <span className={classes['place']}>Pgc</span>
                   </h5>
-                  <p className={classes['degree-para']}>  Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore
-                    adipisicing elit</p>
+                  <p className={classes['degree-para']}>  Passed with 89% in fist division from Federal Board of Intermediate and Secondary Education Pakistan</p>
                 </li>
                 <li className={classes['resume-li']}>
                   <div className={classes['icon-business']}>
@@ -388,8 +386,7 @@ const About = () => {
                   <h5 className={classes['degree-name']}>matriculation
                     <span className={classes['place']}>Dar-e-Arqam high School</span>
                   </h5>
-                  <p className={classes['degree-para']}>  Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore
-                    adipisicing elit</p>
+                  <p className={classes['degree-para']}> Passed with 92% in fist division from Federal Board of Intermediate and Secondary Education Pakistan</p>
                 </li>
               </ul>
             </div>

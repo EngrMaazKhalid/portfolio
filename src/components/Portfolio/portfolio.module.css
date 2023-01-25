@@ -185,3 +185,8 @@
     overflow: hidden;
     border-radius: 5px;
 }
+@media (max-width: 576px){
+    .box{
+        width: 70%;
+    }
+}
