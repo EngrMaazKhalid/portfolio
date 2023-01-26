@@ -44,7 +44,8 @@ const Contact = ()=>{
                 Contact me!
             </h3>
             <p className={classes['contac-para']}>
-            Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.
+            {/* Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions. */}
+            Thank you for visiting my portfolio website. If you have any questions, please feel free to reach out to me by filling out the contact form. You can also reach me via my email or through my LinkedIn profile.
             </p>
             <div className={classes['information']}>
         

@@ -349,7 +349,7 @@ const About = () => {
                   <h5 className={classes['degree-name']}>Web developer
                     <span className={classes['place']}>Fiverr</span>
                   </h5>
-                  <p className={classes['degree-para']}>  Providing front-end web development services on fiverr since last 2 years.
+                  <p className={classes['degree-para']}>  Providing front-end web development services on fiverr since last 2 years. I work closely with clients to understand their needs and preferences, and strive to deliver high-quality websites that meet their requirements.
     </p>
                 </li>
                 <li className={classes['resume-li']}>
@@ -360,7 +360,7 @@ const About = () => {
                   <h5 className={classes['degree-name']}>Software Engineering
                     <span className={classes['place']}>UEt taxila</span>
                   </h5>
-                  <p className={classes['degree-para']}>  Student of Software Engineering in University of Engineering and Technology Taxila, Pakistan </p>
+                  <p className={classes['degree-para']}> Student of Software Engineering in University of Engineering and Technology Taxila, Pakistan </p>
                 </li>
               </ul>
             </div>
@@ -376,7 +376,7 @@ const About = () => {
                   <h5 className={classes['degree-name']}>Pre-Engineering
                     <span className={classes['place']}>Pgc</span>
                   </h5>
-                  <p className={classes['degree-para']}>  Passed with 89% in fist division from Federal Board of Intermediate and Secondary Education Pakistan</p>
+                  <p className={classes['degree-para']}>  Achieved top marks in FSC Pre-Engineering, with a 89%. Demonstrated strong work ethic and dedication to academic success</p>
                 </li>
                 <li className={classes['resume-li']}>
                   <div className={classes['icon-business']}>
@@ -386,7 +386,7 @@ const About = () => {
                   <h5 className={classes['degree-name']}>matriculation
                     <span className={classes['place']}>Dar-e-Arqam high School</span>
                   </h5>
-                  <p className={classes['degree-para']}> Passed with 92% in fist division from Federal Board of Intermediate and Secondary Education Pakistan</p>
+                  <p className={classes['degree-para']}>  I received an overall grade point average of 92%, which demonstrates my dedication to academic excellence and my ability to excel in a challenging curriculum. </p>
                 </li>
               </ul>
             </div>

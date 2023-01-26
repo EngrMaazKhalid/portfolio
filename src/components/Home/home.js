@@ -18,7 +18,8 @@ const Home = ()=>{
             <h1 className={classes['main-heading']}>
             &#8722;  I'm maaz khalid <br /><span>React developer</span>
             </h1>
-        <p className={classes['para']}> I am a software engineer and front-end web developer creating user-friendly, responsive and clean websites & web-apps using react.js, html, css and javascript, I am a passionate web-developer who always want to learn new skills and to make life easy for the people around me</p>
+        <p className={classes['para']}> I am a software engineering student with a focus on front-end web development. I have a strong understanding of HTML, CSS, JavaScript, MaterialUI and React.js and have been working on several projects that showcase my skills. I hope you find my portfolio website informative and engaging.</p>
+        {/* I am a software engineering student with a focus on front-end web development. I have a strong understanding of HTML, CSS, JavaScript, MaterialUI and React.js and have been working on several projects that showcase my skills. I am always eager to take on new projects and challenges, and I am confident that my skills and experience make me an excellent fit for any front-end web development project. I hope you find my portfolio website informative and engaging, and I look forward to hearing from you about any potential projects you may have. */}
         </div>
         </div>
         </div>
