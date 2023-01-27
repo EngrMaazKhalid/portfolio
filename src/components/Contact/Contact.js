@@ -6,6 +6,7 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import GithubIcon from '@mui/icons-material/GitHub';
 import SendIcon from '@mui/icons-material/Send';
 import FormSchema from './Schemas/FormSchema';
 import { useFormik } from 'formik'
@@ -20,13 +21,16 @@ const initialValues =
 };
 
 const Contact = ()=>{
-    const { values, errors, touched, handleBlur, handleChange, handleSubmit } = useFormik({
+    const { values, errors, touched, status, handleBlur, handleChange, handleSubmit } = useFormik({
         initialValues: initialValues,
         validationSchema: FormSchema,
         onSubmit: (values, action) => {
             console.log(values)
             action.resetForm();
-        }
+         
+            action.setStatus("Message sent!" );  
+
+            }
     })
     console.log(errors)
 
@@ -78,6 +82,7 @@ const Contact = ()=>{
                 <li className={classes['social-li']}><FacebookRoundedIcon className={classes['social-icon']} sx={{fontSize:'4rem', transition:'all.2s'}}/></li>
                 <li className={classes['social-li']}><TwitterIcon className={classes['social-icon']} sx={{fontSize:'4rem', transition:'all.2s'}}/></li>
                 <li className={classes['social-li']}><InstagramIcon className={classes['social-iconIns']} sx={{fontSize:'4rem', transition:'all.2s'}}/></li>
+                <li className={classes['social-li']}><a href='https://github.com/EngrMaazKhalid'><GithubIcon className={classes['social-icons']} sx={{fontSize:'4rem', transition:'all.2s'}}/></a></li>
                 <li className={classes['social-li']}><a href='https://www.linkedin.com/in/muhammad-maaz-khalid-131a40247/'> <LinkedInIcon className={classes['social-icon']} sx={{fontSize:'4rem', transition:'all.2s'}}/></a></li>
             </ul>
         </div>
@@ -116,6 +121,7 @@ const Contact = ()=>{
                              <SendIcon sx={{ fontSize:'3rem'}} />
                              </span>
                              </button>
+                             {errors.message && touched.message && errors.subject && touched.subject && errors.email && touched.email && errors.name && touched.name  ? null : (<p className={classes['form-success']}>{status}</p>)}
                     </div>
 
                 </div>

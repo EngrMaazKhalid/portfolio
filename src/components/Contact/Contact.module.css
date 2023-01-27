@@ -350,3 +350,10 @@ textarea{
     margin-bottom: 0.5rem;
     padding-left: 3rem;
 }
+.form-success{
+    color: #51b301;
+    font-size: 1.7rem;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    padding-left: 3rem;
+}
