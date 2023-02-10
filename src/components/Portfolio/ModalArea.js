@@ -10,7 +10,6 @@ const ModalArea = (props) =>{
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    width: '75%',
     height:'auto',
     bgcolor: '#111',
     border: '2px solid #fff',
