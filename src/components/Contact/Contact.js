@@ -87,7 +87,7 @@ const Contact = ()=>{
             </ul>
         </div>
         <div className={classes['form-sec']}>
-            <form className={classes['contactform']} onSubmit={handleSubmit}>
+            <form action='https://formspree.io/f/mayzkybk' method='POST' className={classes['contactform']} onSubmit={handleSubmit}>
                 <div className={classes['row']}>
                     <div className={classes['col-11']}>
                         <div className={classes['formgroup']}>

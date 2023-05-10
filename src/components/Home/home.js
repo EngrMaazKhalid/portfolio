@@ -11,6 +11,7 @@ const Home = ()=>{
         <div className={classes['container']}> 
         <div className={classes['blue-shape']} />
         <div className={classes['home-main']}> 
+     
         <div className={classes['dp-img']} /> 
         <div className={classes['descp-div']}> 
         <div className={classes['descp-part']}>
