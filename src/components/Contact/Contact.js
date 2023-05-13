@@ -2,6 +2,7 @@ import React from 'react'
 import classes from './Contact.module.css';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import MailIcon from '@mui/icons-material/Mail';
+import axios from "axios";
 import PhoneIcon from '@mui/icons-material/Phone';
 import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
 import TwitterIcon from '@mui/icons-material/Twitter';
@@ -25,11 +26,16 @@ const Contact = ()=>{
         initialValues: initialValues,
         validationSchema: FormSchema,
         onSubmit: (values, action) => {
+            axios({
+                method: "POST",
+                url: "https://formspree.io/f/mayzkybk",
+                data: values
+              }).then(response => {
             console.log(values)
             action.resetForm();
          
             action.setStatus("Message sent!" );  
-
+              })
             }
     })
     console.log(errors)
@@ -60,16 +66,17 @@ const Contact = ()=>{
             Islamabad, Pakistan
             </p>
             </div>
-            <div className={classes['information']}>
+          <a href='mailto:engrmaazkhalid@gmail.com'>  <div className={classes['information']}>
         
-        <MailIcon sx={{fontSize:'3.5rem'}} className={classes['icon']} />
+        <MailIcon sx={{fontSize:'3.5rem'}}  className={classes['icon']} />
         
         <p className={classes['info-para']}>
         <span className={classes['info-head']}>Email</span>
            engrmaazkhalid@gmail.com
             </p>
             </div>
-            <div className={classes['information']}>
+            </a>
+         <div className={classes['information']}>
         
         <PhoneIcon sx={{fontSize:'3.5rem'}} className={classes['icon']} />
         
@@ -78,6 +85,7 @@ const Contact = ()=>{
             +92123456789
             </p>
             </div>
+           
             <ul className={classes['social-ul']}>
                 <li className={classes['social-li']}><FacebookRoundedIcon className={classes['social-icon']} sx={{fontSize:'4rem', transition:'all.2s'}}/></li>
                 <li className={classes['social-li']}><TwitterIcon className={classes['social-icon']} sx={{fontSize:'4rem', transition:'all.2s'}}/></li>
@@ -87,7 +95,7 @@ const Contact = ()=>{
             </ul>
         </div>
         <div className={classes['form-sec']}>
-            <form action='https://formspree.io/f/mayzkybk' method='POST' className={classes['contactform']} onSubmit={handleSubmit}>
+            <form  className={classes['contactform']} onSubmit={handleSubmit}>
                 <div className={classes['row']}>
                     <div className={classes['col-11']}>
                         <div className={classes['formgroup']}>
