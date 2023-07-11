@@ -6,6 +6,18 @@ import { Box } from '@mui/system';
 import ModalArea from './ModalArea';
 const Portfolio = ()=>{
     const data =[
+        { id: '07',
+        name:"Softdesk Website",
+        img:require('./softdesk.png'),
+        src:'"Softdesk is student technical society of university of engineering and technology taxila. This website has been created using tailwind.css, next.js, materialUI and simple css"'},
+        { id: '08',
+        name:"Cold case website",
+        img:require('./cold.png'),
+        src:'"Its a project delivered on fiverr, simple html, javascript and css is used in this project"'},
+        { id: '09',
+        name:"Virtual Assistant Portfolio website",
+        img:require('./va.png'),
+        src:'"Portfolio website for vitual assistant, this website is developed using react.js, swiper.js, materialUI and css"'},
         { id: '01',
         name:"Natours Project",
         img:require('./web1.png'),

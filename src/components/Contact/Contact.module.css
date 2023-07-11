@@ -15,6 +15,12 @@
     .Title-sec{
         padding-left: 15px;
         padding-right: 15px;
+        display: flex;
+        justify-content: center;
+    }
+    .Title-bg {
+        display: flex;
+        justify-content: center;
     }
     .Title-sec-h1{
         font-size: 35px!important;

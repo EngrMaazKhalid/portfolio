@@ -91,7 +91,7 @@ const About = () => {
               </div>
               {/* })} */}
               <div className={classes['down-div']}>
-                <a className={classes['button']}><span className={classes['button-text']}> Download</span>
+                <a className={classes['button']} href={require('./maaz-cv.pdf')} download><span className={classes['button-text']}> Download</span>
                   <span className={classes['button-icon']}>
                     <DownloadIcon sx={{ fontSize: '3rem' }} />
                   </span>
@@ -341,6 +341,17 @@ const About = () => {
           <div className={classes['col-lg']}>
             <div className={classes['resume-box']}>
               <ul className={classes['resume-ul']}>
+                <li className={classes['resume-li']}>
+                  <div className={classes['icon-business']}>
+                    <BusinessCenterIcon sx={{ fontSize: '35px' }} />
+                  </div>
+                  <span className={classes['time-period']}>2023-Present</span>
+                  <h5 className={classes['degree-name']}>Vice President
+                    <span className={classes['place']}>Softdesk</span>
+                  </h5>
+                  <p className={classes['degree-para']}>  Serving as a Vice president of Softdesk which is a dynamic and leading tech society at the University of Engineering and Technology Taxila
+    </p>
+                </li>
                 <li className={classes['resume-li']}>
                   <div className={classes['icon-business']}>
                     <BusinessCenterIcon sx={{ fontSize: '35px' }} />
