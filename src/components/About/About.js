@@ -18,7 +18,7 @@ const About = () => {
     }, {
       id: '01', name: 'lname:', answer: 'Khalid'
     }, {
-      id: '02', name: 'age:', answer: '20'
+      id: '02', name: 'age:', answer: '22'
     }, {
       id: '03', name: 'Nationality:', answer: 'Pakistan'
     },
@@ -63,7 +63,7 @@ const About = () => {
                       <span className={classes['answer']}>Khalid</span>
                     </li>
                     <li className={classes['list']}> <span className={classes['title']}>Age: </span>
-                      <span className={classes['answer']}>20</span>
+                      <span className={classes['answer']}>22</span>
                     </li>
                     <li className={classes['list']}> <span className={classes['title']}>Nationality: </span>
                       <span className={classes['answer']}>Pakistan</span>
@@ -91,7 +91,7 @@ const About = () => {
               </div>
               {/* })} */}
               <div className={classes['down-div']}>
-                <a className={classes['button']} href={require('./maaz-cv.pdf')} download><span className={classes['button-text']}> Download</span>
+                <a className={classes['button']} href={require('./maaz-resume.pdf')} download><span className={classes['button-text']}> Download</span>
                   <span className={classes['button-icon']}>
                     <DownloadIcon sx={{ fontSize: '3rem' }} />
                   </span>
@@ -356,6 +356,17 @@ const About = () => {
                   <div className={classes['icon-business']}>
                     <BusinessCenterIcon sx={{ fontSize: '35px' }} />
                   </div>
+                  <span className={classes['time-period']}>2023-Present</span>
+                  <h5 className={classes['degree-name']}>MLSA Alpha Ambassador
+                    <span className={classes['place']}>Microsoft Learn Student Ambassador</span>
+                  </h5>
+                  <p className={classes['degree-para']}>  Representing Microsoft Learn, as an Alpha Ambassador in my university to promote technology education and skill development
+    </p>
+                </li>
+                <li className={classes['resume-li']}>
+                  <div className={classes['icon-business']}>
+                    <BusinessCenterIcon sx={{ fontSize: '35px' }} />
+                  </div>
                   <span className={classes['time-period']}>2021-Present</span>
                   <h5 className={classes['degree-name']}>Web developer
                     <span className={classes['place']}>Fiverr</span>
@@ -363,7 +374,14 @@ const About = () => {
                   <p className={classes['degree-para']}>  Providing front-end web development services on fiverr since last 2 years. I work closely with clients to understand their needs and preferences, and strive to deliver high-quality websites that meet their requirements.
     </p>
                 </li>
-                <li className={classes['resume-li']}>
+               
+              </ul>
+            </div>
+          </div>
+          <div className={classes['col-lg']}>
+            <div className={classes['resume-box']}>
+              <ul className={classes['resume-ul']}>
+              <li className={classes['resume-li']}>
                   <div className={classes['icon-business']}>
                     <SchoolIcon sx={{ fontSize: '35px' }} />
                   </div>
@@ -373,12 +391,6 @@ const About = () => {
                   </h5>
                   <p className={classes['degree-para']}> Student of Software Engineering in University of Engineering and Technology Taxila, Pakistan </p>
                 </li>
-              </ul>
-            </div>
-          </div>
-          <div className={classes['col-lg']}>
-            <div className={classes['resume-box']}>
-              <ul className={classes['resume-ul']}>
                 <li className={classes['resume-li']}>
                   <div className={classes['icon-business']}>
                     <SchoolIcon sx={{ fontSize: '35px' }} />

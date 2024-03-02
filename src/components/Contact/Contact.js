@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import classes from './Contact.module.css';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import MailIcon from '@mui/icons-material/Mail';
@@ -22,6 +22,10 @@ const initialValues =
 };
 
 const Contact = ()=>{
+    const InputNameref = useRef();
+    const InputEmailref = useRef();
+    const InputSubjectref = useRef();
+    const InputMessageref = useRef();
     const { values, errors, touched, status, handleBlur, handleChange, handleSubmit } = useFormik({
         initialValues: initialValues,
         validationSchema: FormSchema,
@@ -31,14 +35,40 @@ const Contact = ()=>{
                 url: "https://formspree.io/f/mayzkybk",
                 data: values
               }).then(response => {
-            console.log(values)
+           
             action.resetForm();
          
             action.setStatus("Message sent!" );  
               })
+
+              const EnteredName = InputNameref.current.value;
+              const EnteredEmail = InputEmailref.current.value;
+              const EnteredSubject = InputSubjectref.current.value;
+              const EnteredMessage = InputMessageref.current.value;
+
+              const FormData ={
+                name: EnteredName,
+                email: EnteredEmail,
+                subject: EnteredSubject,
+                message: EnteredMessage
+              }
+
+              fetch(
+                'https://portfolio-contact-form-abccd-default-rtdb.firebaseio.com/form.json',
+                {
+                    method: 'POST',
+                    body: JSON.stringify(FormData),
+                    Headers:{
+                        'content-type' : 'application/json'
+                    }
+                }
+              )
+               console.log(FormData)
             }
+
+
     })
-    console.log(errors)
+    // console.log(errors)
 
 
 
@@ -99,25 +129,25 @@ const Contact = ()=>{
                 <div className={classes['row']}>
                     <div className={classes['col-11']}>
                         <div className={classes['formgroup']}>
-                            <input type='text' name='name' id='name' placeholder='YOUR NAME' value={values.name} onChange={handleChange} onBlur={handleBlur} />
+                            <input type='text' name='name' id='name' placeholder='YOUR NAME' value={values.name} onChange={handleChange} onBlur={handleBlur} ref={InputNameref} />
                             {errors.name && touched.name ? (<p className={classes['form-error']}>{errors.name}</p>) : null}
                         </div>
                     </div>
                     <div className={classes['col-11']}>
                         <div className={classes['formgroup']}>
-                            <input type='email' name='email' id='email' placeholder='YOUR EMAIL' value={values.email} onChange={handleChange} onBlur={handleBlur} />
+                            <input type='email' name='email' id='email' placeholder='YOUR EMAIL' value={values.email} onChange={handleChange} onBlur={handleBlur} ref={InputEmailref} />
                             {errors.email && touched.email ? (<p className={classes['form-error']}>{errors.email}</p>) : null}
                         </div>
                     </div>
                     <div className={classes['col-112']}>
                         <div className={classes['formgroup']}>
-                            <input type='text' name='subject' id='subject' placeholder='YOUR SUBJECT' value={values.subject} onChange={handleChange} onBlur={handleBlur} />
+                            <input type='text' name='subject' id='subject' placeholder='YOUR SUBJECT' value={values.subject} onChange={handleChange} onBlur={handleBlur} ref={InputSubjectref} />
                             {errors.subject && touched.subject ? (<p className={classes['form-error']}>{errors.subject}</p>) : null}
                         </div>
                     </div>
                     <div className={classes['col-112']}>
                         <div className={classes['formgroup']}>
-                            <textarea name='message' placeholder='YOUR MESSAGE' id='message' value={values.message} onChange={handleChange} onBlur={handleBlur} />
+                            <textarea name='message' placeholder='YOUR MESSAGE' id='message' value={values.message} onChange={handleChange} onBlur={handleBlur} ref={InputMessageref} />
                             {errors.message && touched.message ? (<p className={classes['form-error']}>{errors.message}</p>) : null}
                         </div>
                     </div>
