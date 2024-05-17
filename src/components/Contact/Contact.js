@@ -106,15 +106,17 @@ const Contact = ()=>{
             </p>
             </div>
             </a>
+            <a href='tel:+923315803936'>
          <div className={classes['information']}>
         
         <PhoneIcon sx={{fontSize:'3.5rem'}} className={classes['icon']} />
         
         <p className={classes['info-para']}>
         <span className={classes['info-head']}>call me</span>
-            +92123456789
+            +923315803936
             </p>
             </div>
+            </a>
            
             <ul className={classes['social-ul']}>
                 <li className={classes['social-li']}><FacebookRoundedIcon className={classes['social-icon']} sx={{fontSize:'4rem', transition:'all.2s'}}/></li>

@@ -134,7 +134,7 @@ const About = () => {
                   </p>
                 </div>
               </div>
-              <div className={classes['col-6']}>
+              {/* <div className={classes['col-6']}>
                 <div className={classes['box-stats']}>
                   <h3 className={classes['number']}>
                     25
@@ -144,7 +144,7 @@ const About = () => {
                     <span className={classes['d-block']}>Won</span>
                   </p>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -289,7 +289,7 @@ const About = () => {
 
 
             <Box sx={{ position: 'relative', display: 'inline-flex' }}>
-              <CircularProgress variant='determinate' value={25} size={130} sx={{ color: '#0004ff', backgroundColor: '#252525', borderRadius: '50%' }} />
+              <CircularProgress variant='determinate' value={57} size={130} sx={{ color: '#0004ff', backgroundColor: '#252525', borderRadius: '50%' }} />
               <Box
                 sx={{
                   top: 0,
@@ -302,10 +302,10 @@ const About = () => {
                   justifyContent: 'center',
                 }}
               >
-                <span className={classes['percentage']}> 25%</span>
+                <span className={classes['percentage']}> 57%</span>
               </Box>
             </Box>
-            <h6 className={classes['skill-name']}>Typescript</h6>
+            <h6 className={classes['skill-name']}>ReactNative</h6>
           </div>
           <div className={classes['col-5']}>
 

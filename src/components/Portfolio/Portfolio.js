@@ -46,6 +46,10 @@ const Portfolio = ()=>{
         name:"Train Ticketing Webapp",
         img:require('./train.png'),
         src: '"Its a train ticketing webapp where you can book tickets of different apps. React.js, css and materialui is used in this webapp."'},
+        { id: '07',
+        name:"Geo Hash Webapp",
+        img:require('./geo.png'),
+        src: '"This webapp is used to get the location of any place using geohash. HTML, bootstrap, leaflet.js, css and materialui is used in this webapp."'},
     ]
       const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
