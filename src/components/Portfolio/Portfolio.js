@@ -50,6 +50,10 @@ const Portfolio = ()=>{
         name:"Geo Hash Webapp",
         img:require('./geo.png'),
         src: '"This webapp is used to get the location of any place using geohash. HTML, bootstrap, leaflet.js, css and materialui is used in this webapp."'},
+        { id: '09',
+        name:"LawLens Mobile App",
+        img:require('./lawlens.png'),
+        src: '"LawLens is a mobile application built using React Native, NativeWind, Firebase, and Expo. It integrates APIs from Azure Cloud to provide AI-powered legal assistance, making it an innovative solution that acts as a virtual lawyer to aid users in navigating legal matters."'},
     ]
       const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);

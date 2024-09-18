@@ -91,7 +91,7 @@ const About = () => {
               </div>
               {/* })} */}
               <div className={classes['down-div']}>
-                <a className={classes['button']} href={require('./maaz-resume.pdf')} download><span className={classes['button-text']}> Download</span>
+                <a className={classes['button']} href={require('./Muhammad-Maaz-Khalid-resume.pdf')} download><span className={classes['button-text']}> Download</span>
                   <span className={classes['button-icon']}>
                     <DownloadIcon sx={{ fontSize: '3rem' }} />
                   </span>
@@ -329,7 +329,94 @@ const About = () => {
             </Box>
             <h6 className={classes['skill-name']}>c++</h6>
           </div>
+          <div className={classes['col-5']}>
 
+
+<Box sx={{ position: 'relative', display: 'inline-flex' }}>
+  <CircularProgress variant='determinate' value={80} size={130} sx={{ color: '#0004ff', backgroundColor: '#252525', borderRadius: '50%' }} />
+  <Box
+    sx={{
+      top: 0,
+      left: 0,
+      bottom: 0,
+      right: 0,
+      position: 'absolute',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+    }}
+  >
+    <span className={classes['percentage']}> 80%</span>
+  </Box>
+</Box>
+<h6 className={classes['skill-name']}>Next.js</h6>
+</div>
+<div className={classes['col-5']}>
+
+
+<Box sx={{ position: 'relative', display: 'inline-flex' }}>
+  <CircularProgress variant='determinate' value={60} size={130} sx={{ color: '#0004ff', backgroundColor: '#252525', borderRadius: '50%' }} />
+  <Box
+    sx={{
+      top: 0,
+      left: 0,
+      bottom: 0,
+      right: 0,
+      position: 'absolute',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+    }}
+  >
+    <span className={classes['percentage']}> 60%</span>
+  </Box>
+</Box>
+<h6 className={classes['skill-name']}>SQL</h6>
+</div>
+<div className={classes['col-5']}>
+
+
+<Box sx={{ position: 'relative', display: 'inline-flex' }}>
+  <CircularProgress variant='determinate' value={45} size={130} sx={{ color: '#0004ff', backgroundColor: '#252525', borderRadius: '50%' }} />
+  <Box
+    sx={{
+      top: 0,
+      left: 0,
+      bottom: 0,
+      right: 0,
+      position: 'absolute',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+    }}
+  >
+    <span className={classes['percentage']}> 45%</span>
+  </Box>
+</Box>
+<h6 className={classes['skill-name']}>API Integration</h6>
+</div>
+<div className={classes['col-5']}>
+
+
+<Box sx={{ position: 'relative', display: 'inline-flex' }}>
+  <CircularProgress variant='determinate' value={72} size={130} sx={{ color: '#0004ff', backgroundColor: '#252525', borderRadius: '50%' }} />
+  <Box
+    sx={{
+      top: 0,
+      left: 0,
+      bottom: 0,
+      right: 0,
+      position: 'absolute',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+    }}
+  >
+    <span className={classes['percentage']}> 72%</span>
+  </Box>
+</Box>
+<h6 className={classes['skill-name']}>Tailwindcss</h6>
+</div>
 
 
         </div>
@@ -341,11 +428,22 @@ const About = () => {
           <div className={classes['col-lg']}>
             <div className={classes['resume-box']}>
               <ul className={classes['resume-ul']}>
+              <li className={classes['resume-li']}>
+                  <div className={classes['icon-business']}>
+                    <BusinessCenterIcon sx={{ fontSize: '35px' }} />
+                  </div>
+                  <span className={classes['time-period']}>2024-Present</span>
+                  <h5 className={classes['degree-name']}>Web developer Intern
+                    <span className={classes['place']}>Horizon Tech Service</span>
+                  </h5>
+                  <p className={classes['degree-para']}>  Serving as a Web developer Intern at Horizon Tech Service, where I have been responsible for developing and maintaining websites for clients. I have gained valuable experience in front-end development, and have worked on a variety of projects using HTML, CSS, React.js, Next.js, Mysql and JavaScript.
+    </p>
+                </li>
                 <li className={classes['resume-li']}>
                   <div className={classes['icon-business']}>
                     <BusinessCenterIcon sx={{ fontSize: '35px' }} />
                   </div>
-                  <span className={classes['time-period']}>2023-Present</span>
+                  <span className={classes['time-period']}>2023-2024</span>
                   <h5 className={classes['degree-name']}>Vice President
                     <span className={classes['place']}>Softdesk</span>
                   </h5>
@@ -356,7 +454,7 @@ const About = () => {
                   <div className={classes['icon-business']}>
                     <BusinessCenterIcon sx={{ fontSize: '35px' }} />
                   </div>
-                  <span className={classes['time-period']}>2023-Present</span>
+                  <span className={classes['time-period']}>2023-2024</span>
                   <h5 className={classes['degree-name']}>MLSA Alpha Ambassador
                     <span className={classes['place']}>Microsoft Learn Student Ambassador</span>
                   </h5>
@@ -385,11 +483,11 @@ const About = () => {
                   <div className={classes['icon-business']}>
                     <SchoolIcon sx={{ fontSize: '35px' }} />
                   </div>
-                  <span className={classes['time-period']}>2020-Present</span>
+                  <span className={classes['time-period']}>2020-2024</span>
                   <h5 className={classes['degree-name']}>Software Engineering
                     <span className={classes['place']}>UEt taxila</span>
                   </h5>
-                  <p className={classes['degree-para']}> Student of Software Engineering in University of Engineering and Technology Taxila, Pakistan </p>
+                  <p className={classes['degree-para']}> Passed Software Engineering degree from University of Engineering and Technology Taxila, Pakistan with 3.27CGPA</p>
                 </li>
                 <li className={classes['resume-li']}>
                   <div className={classes['icon-business']}>
